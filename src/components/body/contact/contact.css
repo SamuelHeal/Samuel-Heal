@@ -87,6 +87,11 @@
     background: var(--hovercolour);
     color: var(--backgroundcolor);
   }
+
+  #contact {
+    position: relative;
+    top: -100px
+  }
   
   textarea {
     width: 70%;
@@ -123,4 +128,33 @@
   #submit:hover {
     color: var(--backgroundcolor);
     background-color: var(--mainheader);
+  }
+
+  .messagePos {
+    position: relative;
+    height: 50px;
+    color: var(--mainheader);
+    font-weight: 600;
+    
+  }
+
+  .bigScreen {
+    display: block;
+    margin-bottom: 20px;
+  }
+
+  .smallScreen {
+    display: none;
+    margin-bottom: 20px;
+
+  }
+
+  @media only screen and (max-width: 1024px) {
+    .bigScreen {
+      display: none;
+    }
+    .smallScreen {
+      display: block;
+  
+    }
   }

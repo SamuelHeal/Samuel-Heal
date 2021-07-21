@@ -87,23 +87,21 @@ body {
         width: 100%;
         right:0%;
         top:88%;
+        z-index: 9999;
         background-color: #1A1A1D;
-
     }
 
     .sticky {
         flex-direction: row;
         position: relative;
-        top: -30px;
-        left: -30px
-
+        top: -40px;
+        left: -30px;
     }
+
     .sticky a{
-        margin: 30px
-        /* width: 100% */
+        margin: 30px;
     }
     
 }
-
 
 

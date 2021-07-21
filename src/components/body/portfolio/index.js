@@ -1,92 +1,76 @@
 import React from 'react'
 import './portfolio.css'
-import gymClub from './images/gymClub.png'
-import workoutTracker from './images/workoutTracker.png'
-import reaCharity from './images/reacharity.png'
-import techBlog from './images/techBlog.png'
-import employeeTracker from './images/employeeTracker.png'
-import budgetTracker from './images/budgetTracker.png'
+import Project from './components/portfolio'
+
+const gymClubProps = {
+    name: 'Gym Club',
+    type: 'Full-Stack',
+    languages: 'HTML - CSS - Javascript - mySQL - Handlebars.js',
+    website: 'https://gym-club-group-project.herokuapp.com/',
+    github: 'https://github.com/SamuelHeal/gym-club',
+    image: 'gymClub'
+}
+
+const budgetTrackerProps = {
+    name: 'Budget Tracker',
+    type: 'Full-Stack',
+    languages: 'HTML - CSS - Javascript - MongoDB',
+    website: 'https://budgettracker-130721.herokuapp.com/',
+    github: 'https://github.com/SamuelHeal/Budget-Tracker',
+    image: 'budgetTracker'
+}
+
+const workoutTrackerProps = {
+    name: 'Fitness Tracker',
+    type: 'Full-Stack',
+    languages: 'HTML - CSS - Javascript - MongoDB',
+    website: 'https://workout-tracker-20210706.herokuapp.com/',
+    github: 'https://github.com/SamuelHeal/workout-tracker',
+    image: 'workoutTracker'
+}
+
+const techBlogProps = {
+    name: 'Tech Blog',
+    type: 'Full-Stack',
+    languages: 'HTML - CSS - Javascript - mySQL',
+    website: 'https://lit-mesa-19708.herokuapp.com/',
+    github: 'https://github.com/SamuelHeal/Tech-Blog',
+    image: 'techBlog'
+}
+
+const employeeTrackerProps = {
+    name: 'Employee Manager',
+    type: 'Back-End',
+    languages: 'Javascript',
+    website: '',
+    github: 'https://github.com/SamuelHeal/Employee-Tracker',
+    image: 'employeeTracker'
+}
+
+const reaCharityProps = {
+    name: 'ReaCharity',
+    type: 'Front-End',
+    languages: 'HTML - CSS - Javascript',
+    website: 'https://samuelheal.github.io/ReaCharity/',
+    github: 'https://github.com/SamuelHeal/ReaCharity',
+    image: 'reaCharity'
+}
 
 function Portfolio() {
     return (
         <div className='portfolioContainer'>
-            
+            <div id='projects'></div>
             <div className="projectsHeading">
                 Projects
             </div>
 
             <div className='container'>
-                <div className="projContainer">
-                    <div className="projInfoContainer">
-                        <h2>Gym Club</h2>
-                        <p className="projCat">Full-Stack</p>
-                        <p className="projSpec"><span>Languages:</span><br /><br />HTML - CSS - Javascript - mySQL<br /></p>
-                        <div className='linkContainer'>
-                            <a href='https://github.com/SamuelHeal/gym-club' target='_blank' rel="noreferrer" className="projGit">Github</a>
-                            <a href='https://gym-club-group-project.herokuapp.com/' target='_blank' rel="noreferrer" className="projGit">Website</a>
-                        </div>
-                    </div>
-                    <img className='img' src={gymClub} alt='Gym Club'/>
-                </div>
-                <div className="projContainer">
-                    <div className="projInfoContainer">
-                        <h2>Budget Tracker</h2>
-                        <p className="projCat">Full-Stack</p>
-                        <p className="projSpec"><span>Languages:</span><br /><br />HTML - CSS - Javascript - MongoDB<br /></p>
-                        <div className='linkContainer'>
-                            <a href='https://github.com/SamuelHeal/Budget-Tracker' target='_blank' rel="noreferrer" className="projGit">Github</a>
-                            <a href='https://budgettracker-130721.herokuapp.com/' target='_blank' rel="noreferrer" className="projGit">Website</a>
-                        </div>
-                    </div>
-                    <img className='img' src={budgetTracker} alt='Budget Tracker'/>
-                </div>
-                <div className="projContainer">
-                    <div className="projInfoContainer">
-                        <h2>Fitness Tracker</h2>
-                        <p className="projCat">Full-Stack</p>
-                        <p className="projSpec"><span>Languages:</span><br /><br />HTML - CSS - Javascript - MongoDB<br /></p>
-                        <div className='linkContainer'>
-                            <a href='https://github.com/SamuelHeal/workout-tracker' target='_blank' rel="noreferrer" className="projGit">Github</a>
-                            <a href='https://workout-tracker-20210706.herokuapp.com/' target='_blank' rel="noreferrer" className="projGit">Website</a>
-                        </div>
-                    </div>
-                    <img className='img' src={workoutTracker} alt='Workout Tracker'/>
-                </div>
-                <div className="projContainer">
-                    <div className="projInfoContainer">
-                        <h2>Tech Blog</h2>
-                        <p className="projCat">Full-Stack</p>
-                        <p className="projSpec"><span>Languages:</span><br /><br />HTML - CSS - Javascript - mySQl<br /></p>
-                        <div className='linkContainer'>
-                            <a href='https://github.com/SamuelHeal/Tech-Blog' target='_blank' rel="noreferrer" className="projGit">Github</a>
-                            <a href='https://lit-mesa-19708.herokuapp.com/' target='_blank' rel="noreferrer" className="projGit">Website</a>
-                        </div>
-                    </div>
-                    <img className='img' src={techBlog} alt='Tech Blog'/>
-                </div>
-                <div className="projContainer">
-                    <div className="projInfoContainer">
-                        <h2>Employee Tracker</h2>
-                        <p className="projCat">Back-End</p>
-                        <p className="projSpec"><span>Languages:</span><br /><br />Javascript<br /></p>
-                        <div className='linkContainer'>
-                            <a href='https://github.com/SamuelHeal/Employee-Tracker' target='_blank' rel="noreferrer" className="projGit">Github</a>
-                        </div>
-                    </div>
-                    <img className='img' src={employeeTracker} alt='Employee Tracker'/>
-                </div>
-                <div className="projContainer">
-                    <div className="projInfoContainer">
-                        <h2>ReaCharity</h2>
-                        <p className="projCat">Front-End</p>
-                        <p className="projSpec"><span>Languages:</span><br /><br />HTML - CSS - Javascript<br /></p>
-                        <div className='linkContainer'>
-                            <a href='https://github.com/SamuelHeal/ReaCharity' target='_blank' rel="noreferrer" className="projGit">Github</a>
-                            <a href='https://samuelheal.github.io/ReaCharity/' target='_blank' rel="noreferrer" className="projGit">Website</a>
-                        </div>
-                    </div>
-                    <img className='img' src={reaCharity} alt='ReaCharity'/>
-                </div>
+                <Project props={gymClubProps}/>
+                <Project props={budgetTrackerProps}/>
+                <Project props={workoutTrackerProps}/>
+                <Project props={techBlogProps}/>
+                <Project props={employeeTrackerProps}/>
+                <Project props={reaCharityProps}/>
             </div>
             <div id='contact'></div>
 
