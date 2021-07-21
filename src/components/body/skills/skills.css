@@ -1,0 +1,80 @@
+:root {
+    --textcolour: #ADADAD;
+    --mainheader: #C3073F;
+    --hovercolour: #950740;
+    --bordercolour: #6F2232;
+    --backgroundcolour: #1A1A1D;
+}
+
+
+.skillsContainer {
+    margin-top: 40px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: auto
+}
+
+
+.skillsHeading {
+    font-size: 200%;
+    font-weight: 800;
+}
+
+.allSkills {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+
+}
+
+.skillTypeContainer {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 5px;
+
+}
+
+.skillTypeHeading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    font-size: 120%;
+    font-weight: 600;
+    box-shadow: 0px 2px 0px 0px var(--bordercolour);
+    padding: 10px;
+    margin: auto;
+
+
+    
+}
+
+.skillTypeHeading p{
+    position: relative;
+    left: 0px
+}
+
+.skillNames {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: 120%;
+    width: 90%;
+    margin: auto;
+}
+
+.skillNames p {
+    margin: 20px;
+}
+

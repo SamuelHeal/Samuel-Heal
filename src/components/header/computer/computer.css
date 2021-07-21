@@ -1,0 +1,42 @@
+:root {
+    --textcolour: #ADADAD;
+    --mainheader: #C3073F;
+    --hovercolour: #950740;
+    --bordercolour: #6F2232;
+
+}
+
+.computer {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.navOptions {
+    font-size: 18px;
+    margin-right: 16px;
+    font-weight: 400;
+}
+
+.navOptions a {
+    text-decoration: none;
+    transition: all 0.3s;
+    color: var(--textcolour);
+    display: flex;
+    align-items: center;
+}
+
+.navOptions a:hover {
+    text-decoration: none;
+    color: var(--hovercolour);
+}
+
+.navIcon {
+    display: flex;
+    align-items: center;
+    margin-right: 4px;
+}
+
+.navOptions:last-child {
+    margin-right: 0px;
+}

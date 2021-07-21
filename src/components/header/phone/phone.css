@@ -1,0 +1,72 @@
+:root {
+    --textcolour: #ADADAD;
+    --mainheader: #C3073F;
+    --hovercolour: #950740;
+    --bordercolour: #6F2232;
+    --backgroundcolour: #1A1A1D
+
+}
+
+.closeIcon {
+    display: flex;
+    justify-content: flex-end;
+    font-size: 24px;
+    position: relative;
+    top: 4px;
+    right: 18px;
+    transition: all 0.3s;
+    cursor: pointer;
+    z-index: 999;
+}
+.closeIcon:hover {
+    color: var(--hovercolour);
+}
+
+.phone {
+    background-color: var(--backgroundcolour);
+    height: 100vh;
+    width: 150px;
+    position: absolute;
+    right: -20px;
+    top: -30px;
+    padding: 30px 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    transition: all .5s ease;
+    z-index: 9999;
+}
+
+.menuOptions {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+    top: -100px;
+    justify-content: center;
+    height: 100%;
+}
+
+.mobileOption {
+    margin: 12px 0px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    font-size: 22px;
+    font-weight: 400;
+    margin-right: 16px;
+    font-weight: 400;
+}
+
+.mobileOption a {
+    text-decoration: none;
+    transition: all 0.3s;
+    color: var(--textcolour);
+    display: flex;
+    align-items: center;
+}
+
+.mobileOption a:hover {
+    text-decoration: none;
+    color: var(--hovercolour);
+}
