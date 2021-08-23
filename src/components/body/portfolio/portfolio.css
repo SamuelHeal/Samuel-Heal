@@ -1,129 +1,125 @@
 :root {
-    --textcolour: #ADADAD;
-    --mainheader: #C3073F;
-    --hovercolour: #950740;
-    --bordercolour: #6F2232;
-    --backgroundcolor: #1A1A1D
-
+  --textcolour: #adadad;
+  --mainheader: #c3073f;
+  --hovercolour: #950740;
+  --bordercolour: #6f2232;
+  --backgroundcolor: #1a1a1d;
 }
 
 #contact {
   position: relative;
-  top: -10px
+  top: -10px;
 }
 
 #projects {
   position: relative;
-  top: -100px
+  top: -100px;
 }
 
 .portfolioContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
 }
 
 .projectsHeading {
-    width: 100%;
-    font-size: 200%;
-    font-weight: 800;
-    position: relative;
-    text-align: center;
-    top: 50px;
+  width: 100%;
+  font-size: 200%;
+  font-weight: 800;
+  position: relative;
+  text-align: center;
+  top: 50px;
 }
 
 .container {
-    margin-top: 100px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%
+  margin-top: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-
 .projContainer {
-    border-style: solid;
-    border-color: var(--bordercolour);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    vertical-align: top;
-    overflow: hidden;
-    position: relative;
-    vertical-align: top;
-    margin: 20px;
-    width: 29%;
-    min-width: 300px;
-    height: 228px;
-    border-radius: 10px;
-  }
-  
-  .projContainer img {
-    transition: 0.3s;
-    width: 100%;
-    height: 100%
-  }
-  
-  .projContainer:hover img {
-   transform: scale(1.2);
-   -webkit-transform: scale(1.2);
-  }
-  
-  .projInfoContainer {
-    position: absolute;
-    background: #25070dd5;
-    color: white;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    z-index: 3;
-    opacity: 0;
-    transition: 0.2s;
-  }
-  
-  .projContainer:hover .projInfoContainer {
-    opacity: 1;
-  }
-  
-  .projCat {
-    color: var(--mainheader);
-    font-weight: bold;
-  }
-  
-  .projSpec {
-   color: white;
-   font-family: sans-serif;
-  }
+  border-style: solid;
+  border-color: var(--bordercolour);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: top;
+  overflow: hidden;
+  position: relative;
+  vertical-align: top;
+  margin: 20px;
+  width: 29%;
+  min-width: 300px;
+  height: 240px;
+  border-radius: 10px;
+}
 
-  .projSpec span {
-      font-weight: 400;
-      font-size: 120%;
-  }
+.projContainer img {
+  transition: 0.3s;
+  width: 100%;
+  height: 100%;
+}
+
+.projContainer:hover img {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+}
+
+.projInfoContainer {
+  position: absolute;
+  background: #25070dd5;
+  color: white;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.projContainer:hover .projInfoContainer {
+  opacity: 1;
+}
+
+.projCat {
+  color: var(--mainheader);
+  font-weight: bold;
+}
+
+.projSpec {
+  color: white;
+  font-family: sans-serif;
+}
+
+.projSpec span {
+  font-weight: 400;
+  font-size: 120%;
+}
 
 .projGit {
-    background-color: var(--backgroundcolor);
-    font-size: 130%;
-    border-radius: 5px;
-    color: var(--mainheader);
-    padding: 5px;
-    margin: 10px;
-    text-decoration: none;
-    transition: all 0.3s;
-    cursor: pointer;
-
+  background-color: var(--backgroundcolor);
+  font-size: 130%;
+  border-radius: 5px;
+  color: var(--mainheader);
+  padding: 5px;
+  margin: 10px;
+  text-decoration: none;
+  transition: all 0.3s;
+  cursor: pointer;
 }
 
 .projGit:hover {
-    font-weight: 800;
-    background-color: var(--mainheader);
-    color: var(--backgroundcolor);
+  font-weight: 800;
+  background-color: var(--mainheader);
+  color: var(--backgroundcolor);
 }
-
